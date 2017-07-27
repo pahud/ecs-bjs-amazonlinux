@@ -5,7 +5,7 @@ This is simplified amazonlinux docker image user guide for AWS BJS region
 
 ## ECR mirror for amazonlinux
 
-the following Amazon ECR repo is a local mirror in BJS region with cross-account access  for [amazonlinux on docker hub](https://hub.docker.com/_/amazonlinux/). You may docker pull it directly within China to speed up the access.
+the following Amazon ECR repo is a local mirror in BJS region with [cross-account image pulling](http://docs.aws.amazon.com/AmazonECR/latest/userguide/RepositoryPolicyExamples.html#IAM_allow_other_accounts) for [amazonlinux on docker hub](https://hub.docker.com/_/amazonlinux/). You may docker pull it directly within China to speed up the access.
 
 ###### 937788672844.dkr.ecr.cn-north-1.amazonaws.com.cn/amazonlinux:latest
 
