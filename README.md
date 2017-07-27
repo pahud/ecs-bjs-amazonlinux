@@ -47,6 +47,18 @@ bash-4.2# yum update -y
 
 
 
+## Launch the CloudFormation stack in BJS region
+
+click the button to launch the ECS demo stack in *cn-north-1*
+
+[![cloudformation-launch-stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.amazonaws.cn/cloudformation/home?region=cn-north-1#/stacks/new?stackName=ecs-refarch-bjs&templateURL=https://s3.cn-north-1.amazonaws.com.cn/ecs-cloudformation-bjs/infra.yml)
+
+
+
+
+
+
+
 ## TODO
 
 1. create a CodeBuild project to periodically pull and push official amazonlinux image from Docker Hub to BJS ECR
