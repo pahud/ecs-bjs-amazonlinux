@@ -43,3 +43,4 @@ bash-4.2# yum update -y
 
 1. create a CodeBuild project to periodically pull and push official amazonlinux image from Docker Hub to BJS ECR
 2. CloudWatch Events to trigger the automation
+3. create a CloudFormation stack for BJS to provision a basic ECS environment
