@@ -19,9 +19,17 @@ Please note this is official amazonlinux docker image for global region and we n
 
 ## Build your amazonlinux for BJS(cn-north-1)
 
+fetch and evaluate the ECR credentials 
+
 ```
 # $(aws --region=cn-north-1 ecr get-login --no-include-email)
 Login Succeeded
+(you just need to run this command once)
+```
+
+Docker build on top of the BJS ECR mirror of amazonlinux
+
+```
 $ docker build -t amazonlinux:latest-bjs .
 ```
 
