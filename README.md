@@ -35,3 +35,11 @@ bash-4.2# yum update -y
 (this should trigger the update immediately with local yum repository in China)
 ```
 
+
+
+
+
+## TODO
+
+1. create a CodeBuild project to periodically pull and push official amazonlinux image from Docker Hub to BJS ECR
+2. CloudWatch Events to trigger the automation
