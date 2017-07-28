@@ -335,6 +335,7 @@ Resources:
                   - ecs:RegisterContainerInstance
                   - ecs:StartTelemetrySession
                   - ecs:Submit*
+                  - ecr:*
                   - logs:CreateLogStream
                   - logs:PutLogEvents
                 Resource: '*'

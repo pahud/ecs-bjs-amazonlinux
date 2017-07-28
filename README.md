@@ -9,7 +9,16 @@ the following Amazon ECR repo is a local mirror in BJS region with [cross-accoun
 
 ###### 937788672844.dkr.ecr.cn-north-1.amazonaws.com.cn/amazonlinux:latest
 
-Example: pull the *amazonlinux* mirror from ECR in *cn-north-1* by
+Example: pull the *amazonlinux* mirror from ECR in *cn-north-1* 
+
+1. ###### Authenticate Docker to an Amazon ECR registry with get-login (you just need to run this command once)
+
+```
+# $(aws --region=cn-north-1 ecr get-login --no-include-email)
+Login Succeeded
+```
+
+2. ###### Docker pull the image from ECR
 
 ```
 docker pull 937788672844.dkr.ecr.cn-north-1.amazonaws.com.cn/amazonlinux:latest
@@ -18,14 +27,6 @@ docker pull 937788672844.dkr.ecr.cn-north-1.amazonaws.com.cn/amazonlinux:latest
 Please note this is official amazonlinux docker image for global region and we need some tweaks to accelerate the *yum update* process with that.  Please follow the instructions below to generate the amazonlinux image optimized for BJS region(cn-north-1).
 
 ## Build your amazonlinux for BJS(cn-north-1)
-
-fetch and evaluate the ECR credentials 
-
-```
-# $(aws --region=cn-north-1 ecr get-login --no-include-email)
-Login Succeeded
-(you just need to run this command once)
-```
 
 Docker build on top of the BJS ECR mirror of amazonlinux
 
