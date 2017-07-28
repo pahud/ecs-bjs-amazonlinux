@@ -58,10 +58,15 @@ click the button to launch the ECS demo stack in *cn-north-1*
 
 
 
+## Automated Docker image sync
+
+A [BJS-ECR-Builder](https://github.com/pahud/bjs-ecr-builder) will bring up a CodeBuild task to pull down the amazonlinux:latest image from Dockder hub and then push to Amazon ECR in BJS(cn-north-1) region. This is triggered by CloudWatch Events in Oregon region everyday 13pm. See https://github.com/pahud/bjs-ecr-builder for more details.
+
+
 
 
 ## TODO
 
-1. create a CodeBuild project to periodically pull and push official amazonlinux image from Docker Hub to BJS ECR
+1. **[DONE]** create a CodeBuild project to periodically pull and push official amazonlinux image from Docker Hub to BJS ECR
 2. CloudWatch Events to trigger the automation
 3. create a CloudFormation stack for BJS to provision a basic ECS environment
