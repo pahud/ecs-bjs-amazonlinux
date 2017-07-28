@@ -11,7 +11,7 @@ the following Amazon ECR repo is a local mirror in BJS region with [cross-accoun
 
 Example: pull the *amazonlinux* mirror from ECR in *cn-north-1* 
 
-1. ###### Authenticate Docker to an Amazon ECR registry with get-login (you just need to run this command once)
+1. ###### Authenticate Docker to an Amazon ECR registry with get-login (you just need to run this command once) ([doc](http://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR_AWSCLI.html#AWSCLI_get-login))
 
 ```
 # $(aws --region=cn-north-1 ecr get-login --no-include-email)
